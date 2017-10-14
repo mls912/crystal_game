@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+
+  <style type="text/css">
+
+    #purple {
+      width: 100px;
+      height: 100px;
+    }
+    #pink {
+      width: 100px;
+      height: 100px;
+    }
+    #blue {
+      width: 100px;
+      height: 100px;
+    }
+    #purple2 {
+      width: 100px;
+      height: 100px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron" style="background-color: blue; color: white;">
+		<div class="container">
+			<h1 class="text-center">Crystal Collector</h1>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-lg-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title text">Instructions</h3>
+				</div>
+				<div class="panel-body">
+				<p>You will be given a random number at the start of the game.</p>
+     	 		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        		<p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+        		<p>Each time when the game starts. the game will change the values of each crystal.</p>
+			
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="text-center">Target Score</h3>
+				</div>
+				<div class="panel-body">
+					<h3 class="text-center" id="targetScore">123</h3>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="text-center">Your Score</h3>
+				</div>
+				<div class="panel-body">
+					<h3 class="text-center" id="yourScore"></h3>
+
+				</div>
+			</div>
+		</div>		
+
+		<div class="col-lg-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="text-center">Crystal Selector</h3>
+				</div>
+				<div class="panel-body text-center">
+					<img src="crystal1.jpg" alt="" id="purple">
+					<img src="crystal2.jpg" alt="" id="blue">
+					<img src="crystal3.jpg" alt="" id="purple2">
+					<img src="crystal4.jpg" alt="" id="pink">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="text-center">Win Count</h3>
+				</div>
+				<div class="panel-body">
+					<h3 class="text-center" id="winCounter"></h3>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="text-center">Loss Count</h3>
+				</div>
+				<div class="panel-body">
+					<h3 class="text-center" id="lossCounter"></h3>
+
+				</div>
+			</div>
+		</div>
+
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="logic.js"></script>
+</body>
+</html>
